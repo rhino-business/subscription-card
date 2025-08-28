@@ -1,0 +1,349 @@
+.container {
+    display: grid;
+    border: 0.02rem solid transparent;
+    place-items: center;
+}
+.box {
+    display: grid;
+    border: 0.05rem solid transparent;
+    place-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.card {
+    display: grid;
+    border-left: 0.02rem solid #FEFEFE;
+    border-right: 0.02rem solid #FEFEFE;
+    border-bottom: 0.02rem solid #FEFEFE;
+    border-top: 0.02rem solid rgba(209, 203, 207, 1);
+    position: relative;
+    place-items: center;
+    width: 20rem;
+    height: 28rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0rem 0.9rem 0.65rem 0.05rem rgba(209, 203, 207, 1), 0 0 0.4rem 0.4rem inset rgba(15, 15, 15, 0.5);
+    background: rgba(10, 24, 22, 0.9); 
+}
+section {
+    display: grid;
+    width: 100%;
+    border: 0.02rem solid transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+.includes {
+    z-index: 10;
+}
+.includes p {
+    text-align: left;
+    margin-left: 4rem;
+    line-height: 2rem;
+}
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan"; 
+}
+#heading_card {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#heading_card h1 {
+   text-align: center;
+   margin-left: 0.2rem; 
+   margin-right: 0.2rem; 
+   font-size: 1.7rem;
+   color: rgba(95, 445, 145, 0.8);
+}
+.card::before {
+   display: grid;
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 8rem;
+   height: 8rem;
+   margin-top: 6rem;
+   margin-left: 12rem;
+   clip-path: ellipse(25% 40% at 50% 50%);
+   z-index: 2;
+   background: rgba(100, 100, 100, 0.5);
+   transform: rotate(27deg);
+}
+.card::after {
+   display: grid;
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 6rem;
+   height: 6rem;
+   margin-top: 7rem;
+   margin-left: 13rem;  
+   clip-path: ellipse(25% 40% at 50% 50%);
+   z-index: 3;
+   background: rgba(10, 24, 22, 0.5);
+   transform: rotate(31deg);
+}
+#text h2 {
+   text-align: center;
+   margin-left: 0.2rem; 
+   margin-right: 0.2rem; 
+   font-size: 1.3rem;
+   color: rgba(500, 440, 400, 0.8);
+   margin-bottom: 1rem;
+}
+#equipment {
+    position: relative;
+}
+#equipment::before {
+    display: grid;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    background: url('../images/equipment.svg');
+}
+#apple {
+    position: relative;
+}
+#apple::before {
+    display: grid;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    background: url('../images/apple.svg');
+}
+#training {
+    position: relative;
+}
+#training::before {
+    display: grid;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    background: url('../images/training.svg');
+}
+#schedule {
+    position: relative;
+}
+#schedule::before {
+    display: grid;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    background: url('../images/schedule.svg');
+}
+#nutrition {
+    position: relative;
+}
+#nutrition::before {
+    display: grid;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    background: url('../images/nutrition.svg');
+}
+#support {
+    position: relative;
+}
+#support::before {
+    display: grid;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    background: url('../images/support.svg');
+}
+.card p {
+    color: rgba(300, 241, 340, 0.8);
+    font-size: 1.1rem; 
+}
+#purchase {
+    margin-bottom: 2rem;
+    place-items: center;
+}
+#get {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: 0.01rem solid transparent;
+    display: grid;
+    width: 98%; 
+    height: 2.7rem;
+    border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+    border: 0.02rem solid rgba(30, 14, 0, 0.6); 
+    background: rgba(95, 445, 145, 0.9); 
+    color: rgba(400, 400, 400, 0.8); 
+    font-size: 1.3rem;
+    font-family: "League Spartan";
+    font-weight: bold;
+}
+@font-face {
+    font-family: "League Spartan"; 
+    src: url("../fonts/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvM_oTZA81d.woff2") format("woff2"); 
+    font-style: normal; 
+    font-weight: normal; 
+    font-display: block;
+}
+@media (min-width: 1500px) {
+    .container {
+        width: 1400px;
+        place-self: center;
+    }
+}
+@media(max-width: 360px) {
+    .card {
+        width: 18rem;
+        height: 25.21rem;
+    }
+    .card::before {
+        width: 7.2rem;
+        height: 7.2rem;
+        margin-left: 10rem;
+    }
+    .card::after {
+        width: 5.4rem;
+        height: 5.4rem;
+        margin-left: 10.9rem;
+        margin-top: 6.9rem;
+    }
+    .includes p {
+        margin-left: 3.5rem;
+        line-height: 1.7rem;
+    }
+    #heading_card h1 {
+        font-size: 1.6rem; 
+    }
+    #text h2 {
+        font-size: 1.2rem; 
+    }
+    .card p {
+        font-size: 1.04rem;
+    }
+    #equipment::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-left: 1.2rem;
+    }
+    #apple::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-left: 1.2rem;
+    }
+    #training::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-left: 1.2rem;
+    }
+    #schedule::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-left: 1.2rem;
+    }
+    #nutrition::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-left: 1.2rem;
+    }
+    #support::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-left: 1.2rem;
+    }
+    #get {
+        height: 2.5rem;
+    }
+}
+@media(max-width: 320px) {
+    .card {
+        width: 15rem;
+        height: 21rem;
+    }
+    .card::before {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+    .card::after {
+        width: 3.9rem;
+        height: 3.9rem;
+        margin-top: 6.7rem;
+        margin-left: 10.7rem;
+    }
+    .includes p {
+        line-height: 1.2rem;
+        margin-left: 3rem;
+    }
+    #heading_card h1 {
+        font-size: 1.5rem; 
+    }
+    #text h2 {
+        font-size: 1.05rem; 
+    }
+    .card p {
+        font-size: 0.92rem;
+    }
+    #equipment::before {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 1rem;
+    }
+    #apple::before {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 1rem;
+    }
+    #training::before {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 1rem;
+    }
+    #schedule::before {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 1rem;
+    }
+    #nutrition::before {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 1rem;
+    }
+    #support::before {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 1rem;
+    }
+    #get {
+        height: 2.3rem;
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 277px) {
+    .container {
+        display: none;
+    }
+}
